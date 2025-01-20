@@ -1,0 +1,17 @@
+server:
+  port: 8095
+#  servlet:
+#    context-path: /journal
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://shrishailmalge2004:shrishail16@cluster0.uqa9m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: journaldatabase
+      auto-index-creation: true
+  main:
+    allow-circular-references: true
+
+
+
+

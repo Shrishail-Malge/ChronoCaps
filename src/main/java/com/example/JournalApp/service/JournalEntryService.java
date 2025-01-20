@@ -4,6 +4,8 @@ import com.example.JournalApp.entity.JournalEntry;
 import com.example.JournalApp.entity.User;
 import com.example.JournalApp.repository.JournalEntryRepository;
 import org.bson.types.ObjectId;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
