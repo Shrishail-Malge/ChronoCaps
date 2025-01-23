@@ -1,5 +1,6 @@
 package com.example.JournalApp.controller;
 
+import com.example.JournalApp.cache.AppCache;
 import com.example.JournalApp.entity.User;
 import com.example.JournalApp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,9 @@ public class AdminController {
 
     @Autowired
     private UserService  userService;
+
+    @Autowired
+    private AppCache appCache;
 
     @GetMapping("/all-users")
     public ResponseEntity<?> getAllUsers() {
@@ -37,5 +41,11 @@ public class AdminController {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
 
+    }
+
+
+    @GetMapping("/clear-app-cache")
+    public void clearAppCache() {
+        appCache.init();
     }
 }
