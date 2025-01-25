@@ -11,6 +11,24 @@ spring:
       auto-index-creation: true
   main:
     allow-circular-references: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: malgeshrishail18@gmail.com
+    password: zdnm lrfb wqjl meaq
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+weather:
+  api:
+    key: 4d2ed78c4565b7df360ce816e300fb7d
+
+
+
 
 
 
